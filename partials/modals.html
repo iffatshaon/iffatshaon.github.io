@@ -1,0 +1,25 @@
+<div id="demoModal" class="modal" role="dialog" aria-modal="true" aria-label="Highlight Reel">
+  <div class="w-full max-w-4xl">
+    <div class="flex justify-end mb-2">
+      <button class="close px-3 py-1 rounded bg-white/10 border border-white/15">✕</button>
+    </div>
+    <div class="aspect-video bg-black/60 rounded-xl overflow-hidden">
+      <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&rel=0" title="Highlight Reel" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-label="Project Detail">
+  <div class="w-full max-w-3xl">
+    <div class="flex justify-end mb-2">
+      <button class="close px-3 py-1 rounded bg-white/10 border border-white/15">✕</button>
+    </div>
+    <div class="card p-5">
+      <h3 id="pmTitle" class="text-xl font-semibold"></h3>
+      <p id="pmDesc" class="mt-2 text-gray-300"></p>
+      <div class="mt-4 aspect-video bg-black/60 rounded-lg overflow-hidden">
+        <video id="pmVideo" class="w-full h-full object-cover" controls muted></video>
+      </div>
+    </div>
+  </div>
+</div>
