@@ -1,10 +1,12 @@
 <header id="home" class="hero relative h-screen w-full overflow-hidden">
-  <video autoplay muted loop playsinline poster="assets/hero-fallback.jpg">
+  <video autoplay muted loop playsinline poster="assets/hero-fallback.jpg" class="absolute inset-0 w-full h-full object-cover">
     <source src="assets/hero.mp4" type="video/mp4" />
     <source src="assets/hero.webm" type="video/webm" />
   </video>
   <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/80"></div>
-  <nav class="absolute top-0 left-0 right-0 z-20 p-5 flex items-center justify-between">
+
+  <!-- Fixed Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 p-5 flex items-center justify-between bg-black/50 backdrop-blur-md border-b border-white/10">
     <a href="#home" class="font-[Orbitron] text-xl tracking-widest text-white/90">Iffat</a>
     <div class="space-x-6 text-sm hidden sm:block">
       <a href="#about" class="p-2 hover:text-cyan-300">About</a>
@@ -16,13 +18,19 @@
       <a href="#contact" class="p-2 hover:text-cyan-300">Contact</a>
     </div>
   </nav>
-  <div class="absolute inset-0 z-10 flex items-center justify-center text-center px-6">
+
+  <!-- Hero content -->
+  <div class="absolute inset-0 z-10 flex items-center justify-center text-center px-6 pt-20">
     <div>
       <h1 class="text-4xl sm:text-6xl md:text-6xl font-extrabold font-[Orbitron]">M Iffat Hossain</h1>
-      <p class="mt-4 text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">Robotic Automation and AI • Medical AI • Unity Simulations • Deep Learning on Medical Images</p>
+      <p class="mt-4 text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">
+        Robotic Automation and AI • Medical AI • Unity Simulations • Deep Learning on Medical Images
+      </p>
       <div class="mt-8 flex items-center justify-center gap-4">
         <a href="#projects" class="btn-neon lift inline-block rounded-xl bg-cyan-500/20 border border-cyan-300/50 px-5 py-3 text-sm font-semibold hover:bg-cyan-500/30">View Projects</a>
-        <button data-open-modal="#demoModal" class="btn-neon lift inline-block rounded-xl bg-white/10 border border-white/25 px-5 py-3 text-sm font-semibold hover:bg-white/20">Watch Demo</button>
+        <a href="assets/Iffat_CV.pdf" target="_blank" rel="noopener">
+          <button class="btn-neon lift inline-block rounded-xl bg-white/10 border border-white/25 px-5 py-3 text-sm font-semibold hover:bg-white/20">Download Resume</button>
+        </a>
       </div>
       <a href="#about" class="mt-14 block text-cyan-300/80 hover:text-cyan-200">
         <svg class="w-7 h-7 inline floaty" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
